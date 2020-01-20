@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.clearfix::after,
+.clearfix::before {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+//margin
+.ml-1 {
+  margin-left: 4px
+}
+
+.my-5 {
+  margin-top: 24px
+  margin-bottom: 24px
+}
+
+// custom style
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1230px;
+  }
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+//cover iview style
+.ivu-page-prev {
+  margin-right: 8px !important;
+}
+
+.ivu-page-item {
+  margin-right: 8px !important;
+}
+
+.ivu-page-item:hover,
+.ivu-page-prev:hover,
+.ivu-page-next:hover {
+  border-color: #ff0036 !important;
+}
+
+.ivu-page-item:hover a,
+.ivu-page-prev:hover a,
+.ivu-page-next:hover a,
+.ivu-page-item-jump-prev:hover a,
+.ivu-page-item-jump-next:hover a {
+  color: #ff0036 !important;
+}
+
+.ivu-page-item-active {
+  border-color: #ff0036 !important;
+  background-color: #ff0036 !important;
+}
+
+.ivu-page-item-active a,
+.ivu-page-item-active a:hover,
+.ivu-page-item-active.ivu-page-item:hover a {
+  color: #fff !important
+}
+
+.ivu-page-options-elevator input {
+  font-size: 14px !important
+  text-align: center !important;
+}
+
+.ivu-page-options-elevator input:hover,
+.ivu-page-options-elevator input:focus {
+  border-color: #ff0036 !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
